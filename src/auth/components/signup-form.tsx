@@ -9,6 +9,7 @@ import { useState, FormEvent } from 'react'
 import { useAuth } from '@/auth/AuthContext'
 import { toast } from 'sonner'
 import { Link, useNavigate } from 'react-router'
+import { AuthDivider } from "@/components/auth-divider"
 import logo from '@/assets/react-supabase-auth-template-logo.png'
 
 export function SignUpForm({
@@ -65,7 +66,7 @@ export function SignUpForm({
 
     return (
         <div className={cn("flex flex-col gap-6", className)} {...props}>
-            <Card className="overflow-hidden p-0 glass rounded-2xl">
+            <Card className="overflow-hidden p-0">
                 <CardContent className="grid p-0 md:grid-cols-2">
                     <form className="p-6 md:p-8" onSubmit={handleSubmit}>
                         <div className="flex flex-col gap-6">
@@ -89,11 +90,9 @@ export function SignUpForm({
                                 )}
                                 <span>{isGoogleLoading ? t('common.loading') : t('auth.signUpWithGoogle', "Sign up with Google")}</span>
                             </Button>
-                            <div className="after:border-border relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t">
-                                <span className="bg-card text-muted-foreground relative z-10 px-2">
-                                    {t('auth.orContinueWithEmail', "Or continue with email")}
-                                </span>
-                            </div>
+                            <AuthDivider>
+                                {t('auth.orContinueWithEmail', "Or continue with email")}
+                            </AuthDivider>
                             <div className="grid gap-3">
                                 <Label htmlFor="email">{t('auth.email', "Email")}</Label>
                                 <Input
@@ -132,8 +131,7 @@ export function SignUpForm({
                             </div>
                             <Button
                                 type="submit"
-                                variant="theme"
-                                className="w-full cursor-pointer"
+                                className="w-full"
                                 disabled={loading || isSubmitting}
                             >
                                 {isSubmitting ? (
@@ -162,13 +160,13 @@ export function SignUpForm({
                     </div>
                 </CardContent>
             </Card>
-            <div className="text-muted-foreground *:[a]:hover:text-primary text-center text-xs text-balance *:[a]:underline *:[a]:underline-offset-4">
+            <div className="text-center text-xs text-balance text-muted-foreground">
                 <Trans
                     i18nKey="auth.agreementText"
                     defaults="By continuing, you agree to our {{termsLink}} and {{privacyLink}}"
                     components={{
-                        termsLink: <a href="#" />,
-                        privacyLink: <a href="#" />
+                        termsLink: <a href="#" className="underline underline-offset-4 hover:text-primary" />,
+                        privacyLink: <a href="#" className="underline underline-offset-4 hover:text-primary" />
                     }}
                     values={{
                         termsLink: t('auth.termsOfService', "Terms of service"),

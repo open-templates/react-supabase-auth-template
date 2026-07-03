@@ -70,8 +70,7 @@ export function RecoverPasswordForm({
                                     </div>
                                     <Button
                                         type="submit"
-                                        variant="theme"
-                                        className="w-full cursor-pointer"
+                                        className="w-full"
                                         disabled={loading || isSubmitting}
                                     >
                                         {isSubmitting ? (

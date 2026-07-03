@@ -1,8 +1,8 @@
 import { LoginForm } from "@/auth/components/login-form"
 
-const LogInPages = () => {
+const LogInPage = () => {
     return (
-        <div className="ambient-bg flex flex-col items-center justify-center min-h-screen p-4">
+        <div className="flex flex-col items-center justify-center py-8">
             <div className="w-full max-w-4xl">
                 <LoginForm />
             </div>
@@ -10,4 +10,4 @@ const LogInPages = () => {
     )
 }
 
-export default LogInPages
+export default LogInPage
