@@ -50,7 +50,7 @@ export default function HomePage() {
         </p>
       </div>
 
-      <Card className="glass">
+      <Card>
         <CardHeader>
           <CardTitle>Session (Supabase client)</CardTitle>
           <CardDescription>From the browser Supabase auth session.</CardDescription>
@@ -65,7 +65,7 @@ export default function HomePage() {
         </CardContent>
       </Card>
 
-      <Card className="glass">
+      <Card>
         <CardHeader>
           <CardTitle>Profile (API /me)</CardTitle>
           <CardDescription>

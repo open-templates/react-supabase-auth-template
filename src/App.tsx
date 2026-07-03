@@ -17,7 +17,7 @@ import HomePage from "@/pages/HomePage";
 
 const LoadingSpinner = () => (
   <div className="flex h-screen items-center justify-center">
-    <Loader2Icon className="h-8 w-8 animate-spin text-[color:var(--accent-600)]" />
+    <Loader2Icon className="h-8 w-8 animate-spin text-primary" />
   </div>
 );
 
@@ -81,7 +81,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
         <Toaster position="top-right" richColors />
         <Suspense fallback={<LoadingSpinner />}>
           <RouterProvider router={router} />

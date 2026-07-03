@@ -19,7 +19,7 @@ export const AuthGuard: React.FC<AuthGuardProps> = ({
   if (loading) {
     return (
       <div className="flex items-center justify-center h-screen">
-        <Loader2Icon className="w-8 h-8 animate-spin text-[color:var(--accent-600)]" />
+        <Loader2Icon className="w-8 h-8 animate-spin text-primary" />
       </div>
     );
   }
