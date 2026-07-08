@@ -1,25 +1,6 @@
-# react-supabase-auth-template
+# repo-name
 
-Minimal **React + Vite + Supabase Auth** starter from [@open-templates](https://github.com/open-templates). Pairs with [cf-hono-supabase-api-template](https://github.com/open-templates/cf-hono-supabase-api-template).
-
-## Quick start
-
-1. **Use this template** on GitHub, then clone your repo.
-2. Personalize from `templates/`:
-
-```bash
-./scripts/init-from-template.sh
-```
-
-3. Install and run:
-
-```bash
-bun install
-cp .env.example .env.local
-bun run dev
-```
-
-See [`templates/ABOUT_TEMPLATES.md`](templates/ABOUT_TEMPLATES.md) and [`docs/INIT_TEMPLATE.md`](docs/INIT_TEMPLATE.md).
+Minimal **React + Vite + Supabase Auth** starter. Sign in on the client (email/password or **Google OAuth**); call a **Cloudflare Worker** backend for `GET /health` and `GET /me`. Pairs with [paired-repo-name](https://github.com/owner-username/paired-repo-name).
 
 ## Out-of-the-box features
 
@@ -48,7 +29,7 @@ cp .env.example .env.local
 bun run dev
 ```
 
-Start the API worker first ([cf-hono-supabase-api-template](https://github.com/acme/cf-hono-supabase-api-template) on port `8787`) so health and `/me` work locally.
+Start the API worker first ([paired-repo-name](https://github.com/owner-username/paired-repo-name) on port `8787`) so health and `/me` work locally.
 
 Supabase + Google OAuth setup: [`docs/SUPABASE_SETUP.md`](docs/SUPABASE_SETUP.md)
 
@@ -70,7 +51,7 @@ Supabase + Google OAuth setup: [`docs/SUPABASE_SETUP.md`](docs/SUPABASE_SETUP.md
 
 Target: **Cloudflare Pages**. Build command `bun run build`, output directory `dist`. Set the same `VITE_*` variables in the Pages project settings.
 
-Maintained by [xarlizard](https://github.com/jane).
+Maintained by [author-display-name](https://github.com/author-github-login).
 
 ## License
 

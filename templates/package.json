@@ -1,12 +1,11 @@
 {
-  "name": "react-supabase-auth-template",
+  "name": "repo-name",
   "version": "0.1.0",
   "private": true,
-  "description": "Minimal React + Supabase Auth starter with Google OAuth, health check, and /me API integration. Pairs with cf-hono-supabase-api-template.",
+  "description": "Minimal React + Supabase Auth starter with Google OAuth, health check, and /me API integration.",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "init": "node scripts/init-from-template.mjs",
     "build": "vite build",
     "ci": "tsc --noEmit && vite build",
     "preview": "vite preview",
@@ -18,26 +17,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/open-templates/react-supabase-auth-template.git"
+    "url": "git+https://github.com/owner-username/repo-name.git"
   },
-  "homepage": "https://github.com/open-templates/react-supabase-auth-template#readme",
+  "homepage": "https://github.com/owner-username/repo-name#readme",
   "bugs": {
-    "url": "https://github.com/open-templates/react-supabase-auth-template/issues"
+    "url": "https://github.com/owner-username/repo-name/issues"
   },
   "keywords": [
-    "react-supabase-auth-template",
+    "react",
     "supabase",
     "oauth",
-    "google",
-    "react",
     "vite",
     "cloudflare-pages",
     "bun"
   ],
   "author": {
-    "name": "@xarlizard",
-    "email": "38315638+xarlizard@users.noreply.github.com",
-    "url": "https://github.com/xarlizard"
+    "name": "author-display-name",
+    "email": "author-id+author-github-login@users.noreply.github.com",
+    "url": "https://github.com/author-github-login"
   },
   "license": "MIT",
   "engines": {

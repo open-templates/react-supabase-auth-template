@@ -1,5 +1,5 @@
 name: Bug Report
-description: Report a bug in Krill Bill
+description: Report a bug in Template
 title: "[Bug]: "
 labels: ["bug", "triage"]
 body:
