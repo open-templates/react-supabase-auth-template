@@ -85,5 +85,7 @@ Auth UI lives in `src/auth/components/` (`login-form`, `signup-form`, etc.) usin
 
 ## See also
 
-- [`specs/FEATURES.md`](../../specs/FEATURES.md)
+- [`index.md`](../../../index.md) — OKF feature index
+- [shared/auth/route-guards](../shared/auth/route-guards.md) — OKF guard patterns
+- [shared/auth/supabase-session-flow](../shared/auth/supabase-session-flow.md) — session + token mirror
 - [api-architecture](../api-architecture/SKILL.md)

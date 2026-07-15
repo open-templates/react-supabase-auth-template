@@ -11,7 +11,7 @@ Minimal **React + Vite + Supabase Auth** starter. Sign in on the client (email/p
 | API health indicator | Header polls `GET /health` every 30s |
 | Protected home page | Calls `GET /me` with the Supabase JWT |
 
-See [`specs/FEATURES.md`](specs/FEATURES.md) for routes, API contracts, and extension notes.
+See [`index.md`](index.md) for routes, API contracts, and extension notes.
 
 ## Stack
 

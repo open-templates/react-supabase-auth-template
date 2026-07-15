@@ -30,7 +30,9 @@ See [`templates/ABOUT_TEMPLATES.md`](templates/ABOUT_TEMPLATES.md) and [`docs/IN
 | API health indicator | Header polls `GET /health` every 30s |
 | Protected home page | Calls `GET /me` with the Supabase JWT |
 
-See [`specs/FEATURES.md`](specs/FEATURES.md) for routes, API contracts, and extension notes.
+See [`index.md`](index.md) for routes, API contracts, and extension notes.
+
+Agent docs: [INSTRUCTIONS.md](INSTRUCTIONS.md) · [.agents/skills/](.agents/skills/)
 
 ## Stack
 

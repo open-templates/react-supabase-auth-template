@@ -74,7 +74,7 @@ Implement the route in **cf-hono-supabase-api-template** first. Response shape:
 { "success": true, "data": { ... } }
 ```
 
-Document both sides in each repo's `specs/FEATURES.md`.
+Document both sides in each repo's `index.md`.
 
 ## Do not
 
@@ -84,5 +84,7 @@ Document both sides in each repo's `specs/FEATURES.md`.
 
 ## See also
 
-- [`specs/FEATURES.md`](../../specs/FEATURES.md)
+- [`index.md`](../../../index.md) — OKF feature index
+- [api-fetch](../modules/api-fetch.md) — OKF module for `apiFetch`
+- [shared/auth/jwt-api-passthrough](../shared/auth/jwt-api-passthrough.md) — Bearer token flow
 - Backend skill: `cf-hono-supabase-api-template/.agents/skills/create-api-endpoint/SKILL.md`

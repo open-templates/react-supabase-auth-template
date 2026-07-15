@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **`GET /health` integration** — header polls every 30s for online/offline API status on all pages.
 - **`GET /me` integration** — authenticated home page displays server-validated user profile JSON.
 - **App shell** — `AppHeader` (health indicator + sign out), `AppLayout`, theme provider.
-- **Feature specification** at [`specs/FEATURES.md`](specs/FEATURES.md) for extension guidance.
+- **Feature specification** at [`index.md`](index.md) for extension guidance.
 - **Pairing** with [cf-hono-supabase-api-template](https://github.com/open-templates/cf-hono-supabase-api-template) for the demo backend.
 - **Template init wizard** — `./scripts/init-from-template.sh` personalizes repo metadata from `templates/`.
 - **Shared repository scaffolding** — Dependabot, CODEOWNERS, issue templates, PR template, and standard markdown docs via `@open-templates/specs`.

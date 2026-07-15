@@ -11,7 +11,7 @@ Use this file when turning this template into a **production SPA** with Supabase
 | API health indicator | Header polls `GET /health` |
 | Protected home | Calls `GET /me` with JWT |
 
-Details: [`specs/FEATURES.md`](specs/FEATURES.md)
+Details: [`index.md`](index.md)
 
 ## Prerequisites
 

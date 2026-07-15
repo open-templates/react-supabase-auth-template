@@ -11,7 +11,7 @@ Use this file when turning this template into a **production SPA** with Supabase
 | API health indicator | Header polls `GET /health` |
 | Protected home | Calls `GET /me` with JWT |
 
-Details: [`specs/FEATURES.md`](specs/FEATURES.md)
+Details: [`index.md`](index.md)
 
 ---
 
@@ -103,12 +103,13 @@ Use the **same Supabase project** for both templates so JWTs issued to the brows
 Read in order:
 
 1. **`INSTRUCTIONS.md`** (this file) — OAuth + env setup
-2. **`specs/FEATURES.md`** — routes and API contract
-3. **`.agents/skills/README.md`** — skill index
+2. **`index.md`** — routes and API contract
+3. **`.agents/skills/index.md`** — OKF module guides
+4. **`.agents/skills/README.md`** — Cursor `SKILL.md` catalog
 
 ### Adding a feature page
 
-1. **Backend route** in cf-hono template (if new API) — document in both `specs/FEATURES.md` files
+1. **Backend route** in cf-hono template (if new API) — document in both `index.md` files
 2. **API module**: `src/api/<feature>.ts` using `apiFetch` — see `api-architecture` skill
 3. **Page**: `src/pages/` + route in `src/App.tsx` with `AuthGuard`
 4. **i18n**: keys in `src/locales/en.json` and `es.json`
@@ -129,7 +130,7 @@ src/auth/           AuthContext, guards, forms, auth pages
 src/api/            apiFetch, health, me (+ your modules)
 src/layout/         AppLayout, AppHeader (health dot)
 src/pages/          HomePage (+ your pages)
-specs/FEATURES.md   Feature specification
+index.md   Feature specification
 .agents/skills/     Agent skills
 .cursor/rules/      Cursor IDE rules
 docs/               Supabase setup guide
